@@ -1,0 +1,14 @@
+<div>
+<h1>What you gotta do</h1>
+
+<p>Do not pray for tasks equal to your powers. </p>
+<p>Pray for powers equal to your task</p>
+</div>
+
+<div class="lldiv">
+<% @tasks.map do |task| %>
+<ul  class="list">
+    <%= task[:completed] ? "Just Done It" : "Just Do It" %> - <%= link_to task[:title], task_path(task[:id]) %> - <%= task[:details] %>
+</ul>
+<% end %>
+</div>

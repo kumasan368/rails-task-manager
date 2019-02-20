@@ -1,0 +1,9 @@
+<div class="show">
+<h2><%= @task.title %></h2>
+<p>---> <%=@task.details %></p>
+
+<p class="link"><%= link_to "Check your task list", tasks_path %></p>
+<p class="link"><%= link_to "Delete this task", task_path,
+  method: :delete %></p>
+
+</div>
